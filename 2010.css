@@ -991,5 +991,48 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+/* --- Override màu hoa thành màu hồng --- */
+.flowers .flower__leaf {
+  background-color: #ff69b4 !important;
+  background-image: linear-gradient(to top, #ff69b4, #ff69b4) !important;
+}
+
+.flowers .flower__line {
+  background-image: 
+    linear-gradient(to left, rgba(0,0,0,0.2), transparent, rgba(255,255,255,0.2)),
+    linear-gradient(to top, transparent 10%, #ff69b4, #ff69b4) !important;
+}
+
+.flowers .flower__line__leaf {
+  background-image: linear-gradient(to top, rgba(255,105,180,0.4), #ff69b4) !important;
+}
+
+.flowers .flower__leafs::after {
+  background-color: #ff69b4 !important;
+}
+
+.flowers .flower__light,
+.flowers .flower__light:nth-child(odd) {
+  background-color: #ff69b4 !important;
+}
+
+/* Nếu cần ghi đè thêm các chi tiết hoa khác */
+.flowers .flower__g-front__leaf {
+  background-image: 
+    linear-gradient(to bottom left, transparent, var(--dark-color)),
+    linear-gradient(to bottom right, #ff69b4 45%, transparent 50%, transparent) !important;
+}
+
+.flowers .flower__g-fr__leaf {
+  background-image: 
+    linear-gradient(to bottom left, transparent, var(--dark-color) 98%),
+    linear-gradient(to bottom right, #ff69b4 45%, transparent 50%, transparent) !important;
+}
+
+.flowers .flower__g-right .leaf {
+  border-left: 2vmin solid #ff69b4 !important;
+  background-image: linear-gradient(to bottom, transparent, #ff69b4) !important;
+}
+
 
 /*# sourceMappingURL=style.css.map */
